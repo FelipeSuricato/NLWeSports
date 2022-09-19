@@ -8,7 +8,9 @@ function App() {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
-
+    fetch('http://localhost:3333/games')
+      .then(response => response.json())
+      .then()
   }, []);
 
   return (
